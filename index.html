@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard | HomeCare</title>
+	<!-- STYLES -->
+	<link rel="stylesheet" type="text/css" href="./vendors/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./vendors/fonts/font-awesome/css/font-awesome.min.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="./vendors/fonts/fontawesome/css/all.css" /> -->
+	<link rel="stylesheet" type="text/css" href="./vendors/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="./vendors/slick/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="./vendors/style.css" />
+	<link href="./vendors/flags/css/flags.css" rel="stylesheet" />
+	<!-- END STYLES -->
+	<script type="text/javascript" src="./vendors/jquery/jquery-3.4.0.min.js"></script>
+	
+	
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header class="col-12" id="topo">
+		<div class="row">
+			<div class="col-lg-1 col-md-1 text-center d-md-block d-sm-none d-none">
+				<div class="select-language-box col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-12 pt-4 cursor-pointer">
+					<div class="select-language" 
+						data-input-name="country"
+                        data-selected-country="BR"
+                        data-countries='{"BR": "","US": ""}'></div>
+				</div>
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-12 col-12">
+				<!-- NAVBAR -->
+				<div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-12 pl-0 pr-0">
+					<nav class="navbar navbar-expand-lg navbar-light pl-0 pr-0">
+	  					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+	    					<span class="navbar-toggler-icon"></span>
+	  					</button>
+	  					<a class="navbar-brand font-weight-bold mx-auto" href="#">
+	  						<!-- <b><span class="color-blue-dark">healthcare</span><span class="color-blue-light">alliance</span></b> -->
+	  						<img src="./vendors/images/icon.png" alt="Healthcarealliance" height="30px" />
+	  					</a>
+	  					<div class="select-language-box d-md-none d-sm-block d-block">
+							<div class="select-language" 
+								data-input-name="country"
+		                        data-selected-country="BR"
+		                        data-countries='{"BR": "","US": ""}'></div>
+						</div>
+	  					<div class="collapse navbar-collapse" id="navbarNav">
+		    				<ul class="navbar-nav ml-auto">
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Home">Home</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Sobre Nós">Sobre Nós</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Como Funciona">Como Funciona</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Serviços e Produtos">Serviços e Produtos</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link" href="#" title="Contato">Contato</a>
+		      					</li>
+		      					<li class="nav-item">
+		        					<a class="nav-link color-blue-light-2" href="#" title="Logout">
+		        						<i class="fa fa-2 fa-sign-out color-blue-light-2" aria-hidden="true"></i>
+		        					</a>
+		      					</li>
+		      					<li class="nav-item d-flex">
+    								<div>
+    									<img class="navbar-img" src="./vendors/images/foto-2.png" height="35px" alt="Imagem de Perfil" />
+    								</div>
+    								<div>
+    									<a href="#" title="Profile" class="nav-link m-0 p-0 pl-2">
+    										<b>
+    											<i><span class="color-blue-light-2">Olá, </span><br />Hammer Consult</i>
+    										</b>    										
+    									</a>
+    								</div>
+    							</li>
+		    				</ul>
+		  				</div>						
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- END HEADER -->
+	<section class="position-relative background-gray">
+		<div class="row d-flex align-items-center">
+			<div class="col-lg-1 col-md-1 text-center d-md-block d-sm-none d-none">
+				<h4 class="color-blue-dark font-weight-bold list-vertical-text">		
+					Siga-nos
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					<a class="color-blue-dark ml-2" href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+				</h4>
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-12 col-12">
+				<!-- END NAVBAR -->
+				<div class="banner-div box-shadow-big banner-dashboard">
+					<!-- BANNER BACKGROUND -->
+					<img class="banner-img" src="./vendors/images/dashboard/background.png" width="100%"/>
+					<!-- BANNER CONTEÚDO -->
+					<div class="col-lg-10 col-md-10 col-10 mx-auto banner-content">
+						<!-- MENU -->
+						<div class="pb-4">
+							<p class="font-weight-bold mt-3 mb-3">
+								<a href="#" target="_blank" class="color-green btn-border mr-2">Home</a>
+								<i class="fa fa-angle-right color-blue-light" aria-hidden="true"></i>
+								<span class="color-white ml-2">Minha Conta</span>
+							</p>
+							<p class="border-list-banner-footer border-color-transparent"></p>
+						</div>
+						<!-- end MENU -->	
+								
+					</div>
+					<!-- end BANNER CONTEÚDO -->
+				</div>
+				<!-- BANNER CONTEÚDO -->
+				<div class="col-10 mx-auto banner-content banner-content-dashboard d-none d-sm-none d-md-block">
+					<div class="row centralizar-verticalmente">
+						<div class="col-md-3 col-10 mx-auto mb-3">
+							<!--Paulo Godoy - 18/06/2019 --inserido o input e label abaixo para o upload de foto da empresa.-->
+							<div class="responsive-img image-thumbnail background-gray-light overflow-hidden shadow">
+								<input type="file" name="file-5[]" id="file-5" class="inputfile inputfile-4 esconde" data-multiple-capition="{count} file selected" multiple />
+                                <label for="file-5"><img src="./vendors/images/dashboard/img-user-2.png" class="responsive-img-full" title="Usuário" /></label>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<div class="row d-flex align-items-end">
+								<div class="col-md-9 text-center-xs">
+									<h4 class="color-green"><b><i>Empresas de TI</i></b></h4>
+									<h1 class="color-white mb-0"><b>Hammer Consult</b></h1>
+								</div>
+								<div class="col-md-3 col-6 mx-auto">
+									<h4 class="d-block text-center text-truncate">
+										<a href="#" class="legend btn-border w-100 d-block color-white border-white pt-2 pb-2 text-truncate">
+											<b class="min"><i class="fa fa-sign-out text-left" aria-hidden="true"></i> SAIR</b>
+										</a>
+									</h4>	
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>
+				<!-- end BANNER CONTEÚDO -->
+			</div>			
+		</div>
+		<!-- DADOS -->
+		<div class="container pt-5 pb-5">
+			<div class="row pt-4 pb-4">
+				<aside class="col-lg-3 col-12 mb-5">
+					<div class="col-12 box-empresa bg-white text-center-xs pl-0 pt-2 pb-2 pt-xs-0 pb-xs-0">
+						<p class="item-list-pesquisa active mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Acessórios e Peças"><b>Dashboard</b></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Acessórios e Peças"><b>Gerenciar Conta</b></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Acessórios e Peças"><b>Falar com consultor</b></a>
+						</p>
+						<p class="item-list-pesquisa mb-0">
+							<a class="color-gray d-block pl-4 pt-2 pb-2" href="#" title="Acessórios e Peças"><b>Virar Parceiro</b></a>
+						</p>							
+					</div>
+				</aside>
+				<article class="col-lg-9 col-12">
+					<div class="col-12">
+						<div class="row d-flex align-items-center mb-4">
+							<div class="col-md-12 col-10 mx-auto pl-0 pr-0 text-center-xs">
+								<h2><b><i>Dashboard gerencial</i></b></h2>
+								<h4 class="color-gray"><i>Preencha as informações da sua empresa!</i></h4>
+							</div>
+							<!-- <div class="col-md-3 pl-0 pr-0 d-none d-sm-none d-md-block text-right">
+								<p><a href="#" class="d-inline-block mb-2 btn-border pl-3 pr-3 color-white background-blue-dark pt-2 pb-2"><b class="min"><i>Pesquisar Parceiro</i></b></a></p>
+							</div> -->
+						</div>
+					<!--Paulo Godoy - 18/06/2019 --inserido o form e ajustado textarea para digitar os dados da empresa.-->	
+
+					<form action="" method="POST">	
+						<div class="row item_accordion cursor-pointer th-dashboard pt-3 pb-3">
+							<div class="col-md-4 col-3">
+								<p class="text-truncate mb-0 color-blue-dark"><b>Sobre</b></p>
+							</div>
+							<i class="fa fa-angle-down color-blue-dark icon" aria-hidden="true"></i>
+						</div>
+						<div class="row body_accordion th-dashboard-body mb-1">
+							<div class="centralizar-verticalmente pt-3 pb-3">
+								
+								<div class="col-md-12 col-sm-12 col-12">
+									
+									<textarea class="form-control" id="exampleFormControlTextarea5" rows="7"></textarea>
+									<button type="submit" class="btn btn-border mt-3 float-right color-white background-blue-dark">Salvar</button>
+								</div>										
+							</div>
+						</div>
+						<div class="row item_accordion cursor-pointer th-dashboard pt-3 pb-3 mt-1">
+							<div class="col-md-4 col-3">
+								<p class="text-truncate mb-0 color-blue-dark"><b>Categorias</b></p>
+							</div>
+							<i class="fa fa-angle-down color-blue-dark icon" aria-hidden="true"></i>
+						</div>
+						<div class="row body_accordion th-dashboard-body mb-1">
+							<div class="centralizar-verticalmente pt-3 pb-3">
+								<div class="col-md-12 col-sm-12 col-12">
+										<div class="input-group mb-3">
+											<input  name="checkListItem" id="inpudAdd" type="text" class="form-control" placeholder="Digite uma categoria" aria-label="Digite uma categoria" aria-describedby="basic-addon2">
+											<div class="input-group-append">
+												<button class="btn btn-outline-secondary custom" type="button" id="bttn"><i class="fa fa-plus"></i></button>
+											</div>
+										</div>
+
+										<div class="boxLista"></div>
+											  
+									<button type="submit" class="btn btn-border mt-3 float-right color-white background-blue-dark">Salvar</button>
+								</div>										
+							</div>
+						</div>
+						<div class="row item_accordion cursor-pointer th-dashboard pt-3 pb-3 mt-1">
+							<div class="col-md-4 col-3">
+								<p class="text-truncate mb-0 color-blue-dark"><b>Produtos</b></p>
+							</div>
+							<i class="fa fa-angle-down color-blue-dark icon" aria-hidden="true"></i>
+						</div>
+						<div class="row body_accordion th-dashboard-body mb-1">
+							<div class="centralizar-verticalmente pt-3 pb-3">
+								
+								<div class="col-md-12 col-sm-12 col-12">
+									
+									<form class="needs-validation" novalidate method="POST" action="#">
+										<div class="form-row">
+										<div class="form-group col-md-3">
+												<label for="inputCategoria"><b>Categoria:</b></label>
+												<select id="inputCategoria" class="custom-select">
+													<option selected>Selecione um item</option>
+													<option>Saúde</option>
+													<option>Tecnologia</option>
+												</select>
+											</div>
+											<div class="form-group col-md-3">
+												<label for="inputTitulo"><b>Título:</b></label>
+												<input name="titulo" type="text" class="form-control" id="inputTitulo">
+												<div class="invalid-feedback">
+												</div>
+											</div>
+											
+											<div class="form-group col-md-5">
+											  <label for="inputDescricao"><b>Descrição:</b></label>
+											  <input name="descricao" type="text" class="form-control" id="inputDescricao">
+											</div>
+
+											<div class="input-group col-md-1">
+												<button style="width: 36.06px; height:33.19px; margin-top: 30px;" class="btn btn-outline-secondary custom" type="button" id="bt-prod"><i class="fa fa-plus"></i></button>
+											</div>
+										</div>
+										
+									</form>
+									
+									<!--Inicio tabela-->
+
+									<table  class="table table-hover mt-3">
+										<thead>
+										  <tr>
+											<th scope="col">Categoria</th>
+											<th scope="col">Título</th>
+											<th scope="col">Descricão</th>
+											<th scope="col">Excluir</th>
+										  </tr>
+										</thead>
+											<tbody class="tableList"></tbody>
+										</table>
+
+										  <button type="submit" class="btn btn-border mt-3 float-right color-white background-blue-dark">Salvar</button>
+										
+								</div>
+																	
+							</div>
+						</div>
+
+						<div class="row item_accordion cursor-pointer th-dashboard pt-3 pb-3 mt-1">
+							<div class="col-md-4 col-3">
+								<p class="text-truncate mb-0 color-blue-dark"><b>Galeria</b></p>
+							</div>
+							<i class="fa fa-angle-down color-blue-dark icon" aria-hidden="true"></i>
+						</div>
+						<div class="row body_accordion th-dashboard-body mb-1">
+							<div class="centralizar-verticalmente pt-3 pb-3">
+								<!--Paulo Godoy - 18/06/2019 --inserido o codigo abaixo para galeria de fotos.-->
+								<div class="col-md-12 col-sm-12 col-12">
+									
+									<div class="container">
+										<div class="row">
+											<div class="row">
+												<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+													<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Aqui vai o titulo da foto"
+													   data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+													   data-target="#image-gallery">
+														<img class="img-thumbnail"
+															 src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+															 alt="Another alt text">
+													</a>
+												</div>
+												<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+													<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Aqui vai o titulo da foto"
+													   data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+													   data-target="#image-gallery">
+														<img class="img-thumbnail"
+															 src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+															 alt="Another alt text">
+													</a>
+												</div>
+									
+												<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+													<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Aqui vai o titulo da foto"
+													   data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+													   data-target="#image-gallery">
+														<img class="img-thumbnail"
+															 src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+															 alt="Another alt text">
+													</a>
+												</div>
+												<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+													<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Aqui vai o titulo da foto"
+													   data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+													   data-target="#image-gallery">
+														<img class="img-thumbnail"
+															 src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+															 alt="Another alt text">
+													</a>
+												</div>
+												<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+													<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Aqui vai o titulo da foto"
+													   data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+													   data-target="#image-gallery">
+														<img class="img-thumbnail"
+															 src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+															 alt="Another alt text">
+													</a>
+												</div>
+									
+									
+									
+												<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+													<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Aqui vai o titulo da foto"
+													   data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+													   data-target="#image-gallery">
+														<img class="img-thumbnail"
+															 src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+															 alt="Another alt text">
+													</a>
+												</div>
+												<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+													<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Aqui vai o titulo da foto"
+													   data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+													   data-target="#image-gallery">
+														<img class="img-thumbnail"
+															 src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+															 alt="Another alt text">
+													</a>
+												</div>
+												<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+													<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Aqui vai o titulo da foto"
+													   data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+													   data-target="#image-gallery">
+														<img class="img-thumbnail"
+															 src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+															 alt="Another alt text">
+													</a>
+												</div>
+									
+											</div>
+
+											<!---->
+											<form>
+													<div class="form-group">
+													  <label for="exampleFormControlFile1">Upload de fotos</label>
+													  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+													</div>
+											</form>
+											<!---->
+									
+									
+											<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-lg">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h4 class="modal-title" id="image-gallery-title"></h4>
+															<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<img id="image-gallery-image" class="img-responsive col-md-12" src="">
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+															</button>
+									
+															<button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+															</button>
+														</div>
+														
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									
+								</div>
+																	
+							</div>
+					</form>
+						<!-- end TABLE BODY -->		
+						<p class="text-center-xs mt-5 text-center d-block d-sm-block d-md-none">
+							<a href="#" class="d-inline-block mb-2 btn-border pl-3 pr-3 color-white background-blue-dark pt-2 pb-2"><b class="min">Pesquisar Parceiro</b></a>
+						</p>						
+					</div>
+				</article>
+			</div>				
+		</div>
+		<!-- end DADOS -->
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="pb-0 background-footer">
+		<div class="footer-datas mb-2 col-md-10 offset-md-1 col-sm-12 col-12 background-blue-light z-index-top margin-top-negative pt-4 pb-4">
+			<div class="col-md-10 offset-md-1 col-sm-12 col-12">
+				<div class="row centralizar-verticalmente">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<a class="navbar-brand font-weight-bold text-truncate" href="#">
+							<img src="./vendors/images/icon-white.png" height="30px" />
+	  					</a>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<p class="mb-0 color-white legend text-center text-truncate">
+							<b>
+							<i class="icon fa fa-phone color-blue-dark font-weight-bold mr-2" aria-hidden="true"></i> 
+							+55 (11) 3285-5665
+							<span class="color-blue-dark">
+								<!-- Seg-Sex  -->8am-18pm
+							</span>
+							</b>
+						</p>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<p class="mb-0 color-white legend text-center text-truncate">
+							<b>
+								<i class="icon fa fa-at color-blue-dark font-weight-bold mr-2" aria-hidden="true"></i>
+								contato@healthcarealliance.com.br
+							</b>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6 col-12 text-center-xs pr-0 pl-2 text-nowrap">
+						<h4 class="mb-0 text-left text-center-xs d-md-flex d-sm-flex d-inline-block">
+							<b>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+								<a class="icon-rede-social color-blue-dark ml-2" href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+							</b>
+							<div class="select-language-box d-md-block d-sm-none d-none">	
+								<div class="select-language p-0 ml-2" 
+									data-input-name="country"
+	                        		data-selected-country="BR"
+	                        		data-countries='{"BR": "","US": ""}'>	                        		
+	                        	</div>			
+							</div>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 pt-4 pb-4">
+					<div class="row mb-5">
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 d-md-block d-sm-none d-none">
+							<p class="color-white">Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis. Morbi fermentum libero ut vulputate suscipit. Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis. Morbi fermentum libero ut vulputate suscipit.</p>
+							<p><b class="min"><a href="" class="color-green"><u>Saiba Mais <i class="fa fa-angle-right" aria-hidden="true"></i></u></a></b></p>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-6 col-12 d-md-block d-sm-none d-none">
+							<p class="color-white mb-2"><b>Para Contratantes</b></p>
+							<ul class="ml-0 pl-3 list-footer">
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-6 col-12 d-md-block d-sm-none d-none">
+							<p class="color-white mb-2"><b>Para Parceiros</b></p>
+							<ul class="ml-0 pl-3 list-footer">
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+								<li class="color-white"><p class="mb-0">Link XXX</p></li>
+							</ul>
+						</div>
+						<div class="col-12 text-center-xs d-md-none d-block mb-3">
+							<p class="color-white mb-2"><b>Sobre a Healthcarealliance</b></p>
+							<p class="color-white">Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis. Donec condimentum luctus libero et dapibus.</p>
+							<p><b class="min"><a href="" class="color-green"><u>Saiba Mais <i class="fa fa-angle-right" aria-hidden="true"></i></u></a></b></p>
+						</div>
+						<div class="col-lg-4 col-md-12 col-sm-12 col-12 text-center-xs">
+							<p class="color-white mb-2"><b>Cadastre-se na Newsletter</b></p>
+							<p class="color-white">Donec condimentum luctus libero et dapibus. Nulla molestie dolor eget mauris bibendum, vel pharetra magna iaculis.</p>
+							<form class="form-newsletter">
+		  						<div class="form-row align-items-center">
+		  							<div class="input-group mb-2">
+		    							<input type="mail" class="form-control" placeholder="E-mail">
+		  								<button type="submit" class="btn rounded-0 background-blue-light">
+		  									<i class="fa fa-envelope-o" aria-hidden="true"></i>
+		  								</button>
+		  							</div>
+		  						</div>
+							</form>
+						</div>			
+					</div>
+					<div class="row">
+						<div class="col-md-5 pr-0 d-md-block d-sm-none d-none">
+							<ul class="list-inline list-footer border-list-footer">
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Sobre Nós</a></b></p></li>
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Como Funciona</a></b></p></li>
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Parceiros</a></b></p></li>
+								<li class="list-inline-item pt-4"><p><b class="min"><a class="pt-4 nounderline color-white" href="#">Contato</a></b></p></li>
+							</ul>
+						</div>
+						<div class="col-md-7 pl-0 col-12 pl-xs-0">
+							<p class="pt-4 text-right legend color-white mb-0 border-list-footer text-center-xs">
+								<b class="min">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2019 <span class="color-green">Healthcare Aliance</span>. Desenvolvimento por Hammer Consult.</b>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 col-md-1 text-center d-md-block d-sm-none d-none">
+					<p class="color-white font-weight-bold list-vertical-text cursor-pointer scroll" data-scroll="topo">		
+						Subir ao topo
+						<i class="fa fa-arrow-up color-green ml-2" aria-hidden="true"></i>
+						<b class="color-green">|</b>
+					</p>
+				</div>				
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="./vendors/js/popper.min.js"></script>
+	<script type="text/javascript" src="./vendors/jquery/jquery-3.4.0.min.js"></script>
+	<script type="text/javascript" src="./vendors/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./vendors/slick/slick.js"></script>
+	<script type="text/javascript" src="./vendors/script.js"></script>
+	<script type="text/javascript" src="./vendors/js/carousel-home.js"></script>
+	<script type="text/javascript" src="./vendors/js/carousel-parceiros.js"></script>
+	<script src="./vendors/flags/js/jquery.flagstrap.js"></script>
+	<!-- END SCRIPT -->
+
+</body>
+</html>
